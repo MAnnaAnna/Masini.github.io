@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mașini</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="jquery/jquery.js"></script> 
+
+        <script>
+            $(function(){
+                $("#header").load("header.html"); 
+                $("#footer").load("footer.html"); 
+            });
+        </script>
+        <style>
+            body{
+                background: antiquewhite ;
+            }
+            h2{
+                color: cadetblue !important;
+                font-weight: bold !important;
+            }
+
+            hr.style1{
+                border-top: 1px solid #8c8b8b;
+            }
+            hr.style2 {
+                border-top: 3px double #8c8b8b;
+            }
+            h4{
+                text-align: center;
+            }
+
+
+
+            div.cities {
+                background-color: black;
+                color: white;
+                margin: 20px 0 20px 0;
+                padding: 30px;
+            }
+            .box :hover{
+                border:1px #036 solid;
+                padding:5px 5px 5px;
+                box-shadow:1px 1px 5px;
+                background:white;
+            }
+
+
+        </style>
+
+
+    </head>
+    <body>
+        <div id="header"></div>
+
+
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="img/10.jpg" alt="image" style="width:1800px;height:380px;">
+
+                    <div class="carousel-caption">
+                        <h1>Bine ați venit !</h1>
+
+                    </div>      
+                </div>
+
+                <div class="item">
+                    <img src="img/8.jpeg" alt="image" style="width:1800px;height:380px;">
+                    <div class="carousel-caption">
+                        <h1>Navighează & Descoperă </h1>
+                        <p><h3> </p><h3>
+                        </div>      
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Precedenta</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Urmatoarea</span>
+                </a>
+            </div>
+
+            <div class="container text-center">  
+                <hr class="style2">
+                <h2>Automobile │ Chișinău</h2><br>
+
+                <hr class="style1"> <br>
+                <div class="row">
+                    <div class="col-md-8">
+
+
+                    </div>
+
+                    <div class="cities">
+                        <h2>Volvo XC90</h2>
+                        <p>Un design armonios - lux simplu, cu nivel avansat de siguranţă şi confort pentru toţi cei 7 pasageri.</p>
+                        <p>Design-ul indrazneț întîlnește interiorul frumos. Un model în care tehnologia este naturală, iar fiecare drum este o placere.</p>
+                    </div> 
+
+
+                </div>
+            </div>
+            <div class="container">
+                <div class="col-md-4 box">
+                    <img src="img/v1.jpg" class="img-responsive">
+                </div>
+
+                <div class="col-md-4 box">
+                    <img src="img/v3.jpg" class="img-responsive">
+                </div>
+
+                <div class="col-md-4 box">
+                    <img src="img/v2.jpg" class="img-responsive">
+                </div>
+
+                <div class="clearfix"></div><br>
+            </div>
+
+
+
+
+
+
+
+
+            <h3>Fiecare detaliu este proiectat pentru a transforma condusul într-o activitate mai simplă, mai plăcută şi mai puţin solicitantă.</h3>
+            <div align="center">
+
+                <iframe  width="560" height="315" src="https://www.youtube.com/embed/31oWVd0iqWg" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <h4>Mărcile cele mai populare care sunt comandate de către clienți </h4>
+
+            <div class="container">
+                <div class="row">                   
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                            <span class="sr-only">60% Complete</span>
+                        </div>
+                        <span class="progress-type">BMW</span>
+                        <span class="progress-completed">60%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                            <span class="sr-only">40% Complete (success)</span>
+                        </div>
+                        <span class="progress-type">Volvo</span>
+                        <span class="progress-completed">40%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                            <span class="sr-only">20% Complete (info)</span>
+                        </div>
+                        <span class="progress-type">Mercedes</span>
+                        <span class="progress-completed">20%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                            <span class="sr-only">60% Complete (warning)</span>
+                        </div>
+                        <span class="progress-type">Toyota </span>
+                        <span class="progress-completed">60%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                            <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                        <span class="progress-type">Audi</span>
+                        <span class="progress-completed">80%</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div id="footer"></div>
+
+
+            </body>
+        </html>
